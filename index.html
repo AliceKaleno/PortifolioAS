@@ -3,7 +3,6 @@
 
 <head>
 
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,42 +12,107 @@
 
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pages.css">
+    <link rel="stylesheet" href="./css/effects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-
 </head>
 
 <body>
 
-    <div class="container">
+    <nav class="navbar">
 
-        <div class="top-actions">
+        <div class="nav-container">
 
-    <a href="assets/files/Currículo-de-Alice-M.S.pdf"
-   target="_blank"
-   class="cv-btn"
-   title="Visualizar Currículo">
+            <a href="#home" class="nav-logo">
+                <span class="dot-pulse"></span>
+                Alice Maria
+            </a>
 
-        <i class="fas fa-download"></i>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#skills">Skills</a>
+                <a href="#certificados">Certificados</a>
+                <a href="#contato">Contato</a>
+            </div>
 
-    </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-</div>
+        </div>
 
-        <section class="profile">
+    </nav>
 
-            <img
-                src="./assets/images/alice.png"
-                alt="Alice Maria"
-            >
+    <div class="page-container">
+
+        <!-- ===================== -->
+        <!-- HOME -->
+        <!-- ===================== -->
+
+        <section id="home" class="profile">
+
+            <div class="avatar-wrap">
+
+                <div class="hacker-mascot" aria-hidden="true">
+
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+                        <!-- corpo / moletom com capuz -->
+                        <path d="M50 18 C30 18 22 34 22 50 L22 70 C22 78 30 84 50 84 C70 84 78 78 78 70 L78 50 C78 34 70 18 50 18 Z" fill="#111315"/>
+
+                        <!-- sombra do capuz -->
+                        <ellipse cx="50" cy="46" rx="20" ry="17" fill="#050608"/>
+
+                        <!-- rosto -->
+                        <ellipse cx="50" cy="48" rx="14" ry="12" fill="#1c1f22"/>
+
+                        <!-- óculos / visor brilhando -->
+                        <rect x="38" y="44" width="24" height="7" rx="3.5" fill="#ff003c">
+                            <animate attributeName="opacity" values="1;0.5;1" dur="1.8s" repeatCount="indefinite"/>
+                        </rect>
+
+                        <!-- laptop -->
+                        <rect x="34" y="78" width="32" height="4" rx="1.5" fill="#2a2d31"/>
+                        <rect x="38" y="70" width="24" height="9" rx="1.5" fill="#1c1f22" stroke="#ff003c" stroke-width="1"/>
+
+                        <!-- bracinhos digitando -->
+                        <path d="M30 64 C26 70 28 76 36 78" stroke="#111315" stroke-width="6" fill="none" stroke-linecap="round"/>
+                        <path d="M70 64 C74 70 72 76 64 78" stroke="#111315" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+                    </svg>
+
+                </div>
+
+                <span class="binary-float b1">0</span>
+                <span class="binary-float b2">1</span>
+                <span class="binary-float b3">1</span>
+                <span class="binary-float b4">0</span>
+                <span class="binary-float b5">1</span>
+                <span class="binary-float b6">0</span>
+
+                <img
+                    src="./assets/images/alice.png"
+                    alt="Alice Maria"
+                >
+
+            </div>
+
+            <div class="status-badge">
+                <span class="dot-pulse"></span>
+                CYBERSECURITY STUDENT & DEV
+            </div>
 
             <h1>
-                Alice <span>Maria</span> da <span>Silva</span>
+                Alice <span class="gradient-text">Maria</span> da <span class="gradient-text">Silva</span>
             </h1>
 
             <p class="subtitle">
@@ -56,117 +120,830 @@
                 Front-End Developer
             </p>
 
+            <div class="cta-group">
+
+                <a href="#projetos" class="cta-btn cta-primary">
+                    Ver Projetos
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="assets/files/Currículo-de-Alice-M.S.pdf" target="_blank" class="cta-btn cta-secondary">
+                    Baixar Currículo
+                    <i class="fas fa-download"></i>
+                </a>
+
+            </div>
+
         </section>
 
-        <section class="links">
+        <!-- ===================== -->
+        <!-- SOBRE -->
+        <!-- ===================== -->
 
-<a href="./pages/about.html" class="link-card">
+        <section id="sobre">
 
-        <div class="card-content">
+            <section class="about-header">
 
-            <h3>
-                <i data-lucide="user"></i>
-                Sobre Mim
-            </h3>
+                <div class="avatar-wrap">
 
-            <p>Conheça minha trajetória</p>
+                    <span class="binary-float b1">1</span>
+                    <span class="binary-float b2">0</span>
+                    <span class="binary-float b3">0</span>
+                    <span class="binary-float b4">1</span>
 
-        </div>
+                    <img
+                        src="./assets/images/alice2.png"
+                        alt="Alice Maria"
+                        class="about-photo"
+                    >
 
-        <span class="arrow">
-            <i data-lucide="arrow-up-right"></i>
-        </span>
+                </div>
 
-    </a>
+                <h1>
+                    Sobre <span class="gradient-text">Mim</span>
+                </h1>
 
-    <a href="./pages/projects.html" class="link-card">
+            </section>
 
-        <div class="card-content">
+            <section class="quote-log">
 
-            <h3>
-                <i data-lucide="folder-code"></i>
-                Projetos
-            </h3>
+                <span class="quote-log-prompt mono">&gt;</span>
 
-            <p>Aplicações e sistemas desenvolvidos</p>
+                <p>
+                    "A tecnologia conecta pessoas — e eu estou aqui para isso."
+                </p>
 
-        </div>
+            </section>
 
-        <span class="arrow">
-            <i data-lucide="arrow-up-right"></i>
-        </span>
+            <section class="about-grid">
 
-    </a>
+                <div class="card about-text">
 
-<a href="./pages/skills.html" class="link-card">
+                    <p>
+                        Sou estudante de tecnologia apaixonada por desenvolvimento web,
+                        segurança digital e inovação.
 
-        <div class="card-content">
+                        Possuo formação técnica em Desenvolvimento de Sistemas pelo IFPE,
+                        onde participei de projetos acadêmicos voltados para tecnologia
+                        e impacto social.
+                    </p>
 
-            <h3>
-                <i data-lucide="shield"></i>
+                    <br>
+
+                    <p>
+                        Atualmente, curso Segurança Cibernética na Gran Faculdade,
+                        ampliando meus conhecimentos em proteção digital,
+                        análise de vulnerabilidades e boas práticas de segurança da informação.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Busco oportunidades que me permitam crescer profissionalmente,
+                        aplicar meus conhecimentos em projetos reais e contribuir com
+                        soluções que gerem valor por meio da tecnologia.
+                    </p>
+
+                </div>
+
+                <div class="terminal-window about-mini-terminal">
+
+                    <div class="terminal-header">
+
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span class="terminal-title mono">about.sh</span>
+
+                    </div>
+
+                    <div class="terminal-body" id="aboutTerminalBody">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+
+                <h2 class="section-title">
+                    Minha Jornada
+                </h2>
+
+                <div class="hacker-timeline">
+
+                    <div class="hacker-node">
+                        <span class="hacker-node-dot"></span>
+                        <div class="hacker-node-content">
+                            <span class="hacker-node-tag mono">[2023 - 2025]</span>
+                            <h3>🎓 Técnico em Desenvolvimento de Sistemas</h3>
+                            <p>IFPE Jaboatão dos Guararapes</p>
+                        </div>
+                    </div>
+
+                    <div class="hacker-node">
+                        <span class="hacker-node-dot"></span>
+                        <div class="hacker-node-content">
+                            <span class="hacker-node-tag mono">[2026]</span>
+                            <h3>🛡️ Segurança Cibernética</h3>
+                            <p>Gran Faculdade</p>
+                        </div>
+                    </div>
+
+                    <div class="hacker-node">
+                        <span class="hacker-node-dot active"></span>
+                        <div class="hacker-node-content">
+                            <span class="hacker-node-tag mono">[atualmente]</span>
+                            <h3>🚀 Projetos de Desenvolvimento Web & Cybersecurity</h3>
+                            <p>Em constante evolução</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+
+                <div class="terminal-window curiosity-terminal">
+
+                    <div class="terminal-header">
+
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span class="terminal-title mono">curiosidade.txt</span>
+
+                    </div>
+
+                    <div class="terminal-body">
+
+                        <div class="terminal-line cmd">cat curiosidade.txt</div>
+
+                        <div class="terminal-line highlight">💡 Curiosidade sobre mim:</div>
+
+                        <div class="terminal-line">
+                            Além da tecnologia, gosto de criar projetos que unem criatividade,
+                            design e impacto social, buscando sempre aprender novas ferramentas
+                            e explorar novos desafios.
+                        </div>
+
+                        <div class="terminal-line cmd typing-cursor"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <!-- ===================== -->
+        <!-- PROJETOS -->
+        <!-- ===================== -->
+
+        <section id="projetos">
+
+            <h1 class="title">
+                <i class="fas fa-shield-halved"></i>
+                Meus Projetos
+            </h1>
+
+            <p class="subtitle">
+                Direto do GitHub — repositórios públicos atualizados automaticamente.
+            </p>
+
+            <section class="github-section">
+
+                <div id="githubRepos" class="github-grid">
+
+                    <p class="github-loading mono">Carregando repositórios...</p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <!-- ===================== -->
+        <!-- SKILLS -->
+        <!-- ===================== -->
+
+        <section id="skills">
+
+            <h1 class="title">
+                <i class="fas fa-laptop-code"></i>
                 Habilidades
-            </h3>
+            </h1>
 
-            <p>Cybersecurity e Desenvolvimento</p>
+            <p class="subtitle">
+                Tecnologias e áreas que fazem parte da minha jornada.
+            </p>
 
-        </div>
+            <section class="hacker-skills">
 
-        <span class="arrow">
-            <i data-lucide="arrow-up-right"></i>
-        </span>
+                <div class="hacker-skill">
+                    <div class="hacker-skill-info mono">
+                        <span>JavaScript</span>
+                        <span class="hacker-skill-pct">90%</span>
+                    </div>
+                    <div class="progress-bar hacker-bar">
+                        <div class="progress" data-width="90%"></div>
+                    </div>
+                </div>
 
-    </a>
+                <div class="hacker-skill">
+                    <div class="hacker-skill-info mono">
+                        <span>HTML / CSS</span>
+                        <span class="hacker-skill-pct">90%</span>
+                    </div>
+                    <div class="progress-bar hacker-bar">
+                        <div class="progress" data-width="90%"></div>
+                    </div>
+                </div>
 
-<a href="./pages/certificates.html" class="link-card"> 
+                <div class="hacker-skill">
+                    <div class="hacker-skill-info mono">
+                        <span>Python</span>
+                        <span class="hacker-skill-pct">70%</span>
+                    </div>
+                    <div class="progress-bar hacker-bar">
+                        <div class="progress" data-width="70%"></div>
+                    </div>
+                </div>
 
-        <div class="card-content">
+                <div class="hacker-skill">
+                    <div class="hacker-skill-info mono">
+                        <span>APIs REST</span>
+                        <span class="hacker-skill-pct">85%</span>
+                    </div>
+                    <div class="progress-bar hacker-bar">
+                        <div class="progress" data-width="85%"></div>
+                    </div>
+                </div>
 
-            <h3>
-                <i data-lucide="badge-check"></i>
+                <div class="hacker-skill">
+                    <div class="hacker-skill-info mono">
+                        <span>Cybersecurity</span>
+                        <span class="hacker-skill-pct">75%</span>
+                    </div>
+                    <div class="progress-bar hacker-bar">
+                        <div class="progress" data-width="75%"></div>
+                    </div>
+                </div>
+
+                <div class="hacker-skill">
+                    <div class="hacker-skill-info mono">
+                        <span>Git / GitHub</span>
+                        <span class="hacker-skill-pct">85%</span>
+                    </div>
+                    <div class="progress-bar hacker-bar">
+                        <div class="progress" data-width="85%"></div>
+                    </div>
+                </div>
+
+                <div class="hacker-skill">
+                    <div class="hacker-skill-info mono">
+                        <span>React / React Native</span>
+                        <span class="hacker-skill-pct">85%</span>
+                    </div>
+                    <div class="progress-bar hacker-bar">
+                        <div class="progress" data-width="85%"></div>
+                    </div>
+                </div>
+
+                <div class="hacker-skill">
+                    <div class="hacker-skill-info mono">
+                        <span>UI / UX</span>
+                        <span class="hacker-skill-pct">70%</span>
+                    </div>
+                    <div class="progress-bar hacker-bar">
+                        <div class="progress" data-width="70%"></div>
+                    </div>
+                </div>
+
+            </section>
+
+            <h2 class="section-title">
+                Ferramentas
+            </h2>
+
+            <div class="tool-hex-grid">
+
+                <div class="tool-hex">
+                    <i class="fab fa-html5"></i>
+                    <span class="mono">HTML</span>
+                </div>
+
+                <div class="tool-hex">
+                    <i class="fab fa-css3-alt"></i>
+                    <span class="mono">CSS</span>
+                </div>
+
+                <div class="tool-hex">
+                    <i class="fab fa-js"></i>
+                    <span class="mono">JavaScript</span>
+                </div>
+
+                <div class="tool-hex">
+                    <i class="fab fa-react"></i>
+                    <span class="mono">React</span>
+                </div>
+
+                <div class="tool-hex">
+                    <i class="fab fa-python"></i>
+                    <span class="mono">Python</span>
+                </div>
+
+                <div class="tool-hex">
+                    <i class="fab fa-git-alt"></i>
+                    <span class="mono">Git</span>
+                </div>
+
+                <div class="tool-hex">
+                    <i class="fab fa-github"></i>
+                    <span class="mono">GitHub</span>
+                </div>
+
+                <div class="tool-hex">
+                    <i class="fas fa-database"></i>
+                    <span class="mono">MySQL</span>
+                </div>
+
+            </div>
+
+            <h2 class="section-title">
+                Áreas de Interesse
+            </h2>
+
+            <div class="interest-grid">
+
+                <div class="interest-card">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>Segurança Cibernética</span>
+                </div>
+
+                <div class="interest-card">
+                    <i class="fas fa-code"></i>
+                    <span>Desenvolvimento Front-End</span>
+                </div>
+
+                <div class="interest-card">
+                    <i class="fas fa-mobile-screen-button"></i>
+                    <span>Aplicações Mobile</span>
+                </div>
+
+                <div class="interest-card">
+                    <i class="fas fa-brain"></i>
+                    <span>Inteligência Artificial</span>
+                </div>
+
+            </div>
+
+            <section class="alice-terminal">
+
+                <p class="terminal-hint">
+                    Abra o terminal e digite <span class="mono">help</span> pra explorar
+                </p>
+
+                <div class="terminal-window">
+
+                    <div class="terminal-header">
+
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span class="terminal-title mono">alice@portfolio:~</span>
+
+                    </div>
+
+                    <div class="terminal-body" id="terminalBody">
+
+                        <div class="terminal-line">Bem-vinda(o) ao terminal da Alice.</div>
+                        <div class="terminal-line">Digite "help" pra ver os comandos disponíveis.</div>
+
+                    </div>
+
+                    <div class="terminal-input-row">
+
+                        <span class="terminal-prompt mono">alice@portfolio:~$</span>
+
+                        <input
+                            id="terminalInput"
+                            class="terminal-input mono"
+                            type="text"
+                            autocomplete="off"
+                            spellcheck="false"
+                            aria-label="Terminal interativo"
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <!-- ===================== -->
+        <!-- CERTIFICADOS -->
+        <!-- ===================== -->
+
+        <section id="certificados">
+
+            <h1 class="title">
+                <i class="fas fa-certificate"></i>
                 Certificados
-            </h3>
+            </h1>
 
-            <p>Formações e cursos realizados</p>
+            <p class="subtitle">
+                Certificações e cursos que contribuíram para minha formação profissional.
+            </p>
 
-        </div>
+            <div class="certificates-grid">
 
-        <span class="arrow">
-            <i data-lucide="arrow-up-right"></i>
-        </span>
+                <div class="certificate-card">
 
-    </a>
+                    <img
+                        src="./assets/images/python.png"
+                        alt="Python"
+                        class="certificate-image"
+                    >
 
-<a href="./pages/contact.html" class="link-card">
+                    <div class="certificate-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
 
-        <div class="card-content">
+                    <h3>Python Essentials 1</h3>
 
-            <h3>
-                <i data-lucide="mail"></i>
-                Contato
-            </h3>
+                    <p>Cisco Networking Academy</p>
 
-            <p>LinkedIn, GitHub, Email e Instagram</p>
+                    <div class="certificate-buttons">
 
-        </div>
+                        <button class="view-btn" onclick="openModal('./assets/images/python.png')">
+                            Visualizar
+                        </button>
 
-        <span class="arrow">
-            <i data-lucide="arrow-up-right"></i>
-        </span>
+                        <button class="more-btn" onclick="toggleInfo(this)">
+                            Saber Mais
+                        </button>
 
-    </a>
+                    </div>
 
-</section>
+                    <div class="certificate-info">
+                        <p>
+                            Curso focado em fundamentos de programação com Python,
+                            lógica de programação e desenvolvimento de projetos
+                            práticos. Durante a formação, desenvolvi aplicações e
+                            fortaleci habilidades de resolução de problemas e
+                            raciocínio lógico.
+                        </p>
+                    </div>
 
- <!-- FOOTER -->
+                </div>
+
+                <div class="certificate-card">
+
+                    <img
+                        src="./assets/images/AI-900.png"
+                        alt="AI 900"
+                        class="certificate-image"
+                    >
+
+                    <div class="certificate-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+
+                    <h3>AI-900 Fundamentos de IA no Azure</h3>
+
+                    <p>Bradesco</p>
+
+                    <div class="certificate-buttons">
+
+                        <button class="view-btn" onclick="openModal('./assets/images/AI-900.png')">
+                            Visualizar
+                        </button>
+
+                        <button class="more-btn" onclick="toggleInfo(this)">
+                            Saber Mais
+                        </button>
+
+                    </div>
+
+                    <div class="certificate-info">
+                        <p>
+                            Formação voltada aos conceitos de Inteligência Artificial,
+                            Machine Learning e serviços de IA na plataforma Azure.
+                            O curso ampliou minha compreensão sobre aplicações
+                            práticas de IA em soluções tecnológicas.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="certificate-card">
+
+                    <img
+                        src="./assets/images/comunicacao-empresarial.png"
+                        alt="Comunicação empresarial"
+                        class="certificate-image"
+                    >
+
+                    <div class="certificate-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+
+                    <h3>Comunicação Empresarial</h3>
+
+                    <p>Bradesco</p>
+
+                    <div class="certificate-buttons">
+
+                        <button class="view-btn" onclick="openModal('./assets/images/comunicacao-empresarial.png')">
+                            Visualizar
+                        </button>
+
+                        <button class="more-btn" onclick="toggleInfo(this)">
+                            Saber Mais
+                        </button>
+
+                    </div>
+
+                    <div class="certificate-info">
+                        <p>
+                            Curso focado no desenvolvimento da comunicação profissional,
+                            escrita corporativa, organização de ideias e relacionamento interpessoal,
+                            fortalecendo habilidades essenciais para trabalho em equipe.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="certificate-card">
+
+                    <img
+                        src="./assets/images/banco-dados.png"
+                        alt="Banco de Dados"
+                        class="certificate-image"
+                    >
+
+                    <div class="certificate-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+
+                    <h3>Administrando Banco de Dados</h3>
+
+                    <p>Bradesco</p>
+
+                    <div class="certificate-buttons">
+
+                        <button class="view-btn" onclick="openModal('./assets/images/banco-dados.png')">
+                            Visualizar
+                        </button>
+
+                        <button class="more-btn" onclick="toggleInfo(this)">
+                            Saber Mais
+                        </button>
+
+                    </div>
+
+                    <div class="certificate-info">
+                        <p>
+                            Formação voltada à organização, gerenciamento e manipulação de dados,
+                            com introdução a SQL e conceitos fundamentais de banco de dados para
+                            aplicações e sistemas.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="certificate-card">
+
+                    <img
+                        src="./assets/images/analise-dados.png"
+                        alt="Análise de Dados"
+                        class="certificate-image"
+                    >
+
+                    <div class="certificate-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+
+                    <h3>Análise de Dados e Inteligência de Negócios</h3>
+
+                    <p>Gran Cursos/Faculdade</p>
+
+                    <div class="certificate-buttons">
+
+                        <button class="view-btn" onclick="openModal('./assets/images/analise-dados.png')">
+                            Visualizar
+                        </button>
+
+                        <button class="more-btn" onclick="toggleInfo(this)">
+                            Saber Mais
+                        </button>
+
+                    </div>
+
+                    <div class="certificate-info">
+                        <p>
+                            Curso focado em análise de dados, geração de insights e apoio à tomada de decisões.
+                            Desenvolvi habilidades analíticas para transformar informações em soluções estratégicas.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="certificate-card">
+
+                    <img
+                        src="./assets/images/aprendizagem-criativa.png"
+                        alt="Aprendizagem Criativa"
+                        class="certificate-image"
+                    >
+
+                    <div class="certificate-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+
+                    <h3>Conceitos de Aprendizagem Criativa</h3>
+
+                    <p>Bradesco</p>
+
+                    <div class="certificate-buttons">
+
+                        <button class="view-btn" onclick="openModal('./assets/images/aprendizagem-criativa.png')">
+                            Visualizar
+                        </button>
+
+                        <button class="more-btn" onclick="toggleInfo(this)">
+                            Saber Mais
+                        </button>
+
+                    </div>
+
+                    <div class="certificate-info">
+                        <p>
+                            Formação baseada em metodologias de aprendizagem ativa,
+                            criatividade e resolução de problemas. O curso incentivou o pensamento crítico,
+                            a inovação e a construção prática do conhecimento.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="certificateModal" class="modal">
+
+                <span class="close-modal">&times;</span>
+
+                <img id="modalImage">
+
+            </div>
+
+        </section>
+
+        <!-- ===================== -->
+        <!-- CONTATO -->
+        <!-- ===================== -->
+
+        <section id="contato" class="contact-page">
+
+            <section class="contact-header">
+
+                <span class="status-badge contact-status">
+                    <span class="dot-pulse"></span>
+                    DISPONÍVEL PARA NOVOS PROJETOS
+                </span>
+
+                <h1>
+                    Entre em <span class="gradient-text">contato</span> comigo
+                </h1>
+
+                <p>
+                    Vamos conversar? Escolha um canal de acesso abaixo.
+                </p>
+
+            </section>
+
+            <section class="cyber-contact-grid">
+
+                <a href="https://wa.me/5581994467601"
+                   class="cyber-node"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <span class="cyber-corner tl"></span>
+                    <span class="cyber-corner tr"></span>
+                    <span class="cyber-corner bl"></span>
+                    <span class="cyber-corner br"></span>
+
+                    <i class="fab fa-whatsapp"></i>
+
+                    <h3>WhatsApp</h3>
+
+                    <span class="cyber-node-tag mono">resposta_rápida</span>
+
+                </a>
+
+                <a href="https://github.com/AliceKaleno/"
+                   class="cyber-node"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <span class="cyber-corner tl"></span>
+                    <span class="cyber-corner tr"></span>
+                    <span class="cyber-corner bl"></span>
+                    <span class="cyber-corner br"></span>
+
+                    <i class="fab fa-github"></i>
+
+                    <h3>GitHub</h3>
+
+                    <span class="cyber-node-tag mono">@AliceKaleno</span>
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/alice-maria-da-silva/"
+                   class="cyber-node"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <span class="cyber-corner tl"></span>
+                    <span class="cyber-corner tr"></span>
+                    <span class="cyber-corner bl"></span>
+                    <span class="cyber-corner br"></span>
+
+                    <i class="fab fa-linkedin-in"></i>
+
+                    <h3>LinkedIn</h3>
+
+                    <span class="cyber-node-tag mono">rede_profissional</span>
+
+                </a>
+
+                <a href="https://www.instagram.com/a_kalenno.cyber/"
+                   class="cyber-node"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <span class="cyber-corner tl"></span>
+                    <span class="cyber-corner tr"></span>
+                    <span class="cyber-corner bl"></span>
+                    <span class="cyber-corner br"></span>
+
+                    <i class="fab fa-instagram"></i>
+
+                    <h3>Instagram</h3>
+
+                    <span class="cyber-node-tag mono">@a_kalenno.cyber</span>
+
+                </a>
+
+                <a href="mailto:webdev.alice7@gmail.com?subject=Contato%20através%20do%20Portfólio&body=Olá%20Alice,"
+                   class="cyber-node cyber-node-wide"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <span class="cyber-corner tl"></span>
+                    <span class="cyber-corner tr"></span>
+                    <span class="cyber-corner bl"></span>
+                    <span class="cyber-corner br"></span>
+
+                    <i class="fas fa-envelope"></i>
+
+                    <h3>Email Profissional</h3>
+
+                    <span class="cyber-node-tag mono">webdev.alice7@gmail.com</span>
+
+                </a>
+
+            </section>
+
+        </section>
+
+        <!-- FOOTER -->
         <div class="footer">
             © 2026 - Alice Silva | Desenvolvido com 🖥️ e criatividade
         </div>
 
     </div>
 
-    <script>
-lucide.createIcons();
-</script>
+    <script src="./js/certificates.js"></script>
+    <script src="./js/github-repos.js"></script>
+    <script src="./js/terminal.js"></script>
+    <script src="./js/about-terminal.js"></script>
+    <script src="./js/effects.js"></script>
 
 </body>
 
