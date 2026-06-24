@@ -163,15 +163,12 @@ box-shadow:
 
 
 .tech-grid{
-
-display:flex;
-
-flex-wrap:wrap;
-
-gap:15px;
-
-margin-bottom:40px;
-
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-bottom:40px;
 }
 
 .tech-grid span{
@@ -242,9 +239,6 @@ box-shadow:
 
 }
 
-/* ===================== */
-/* PROJETOS */
-/* ===================== */
 
 .title{
 
@@ -399,8 +393,6 @@ box-shadow:
 
 }
 
-/* CARROSSEL */
-
 .carousel{
 
 position:relative;
@@ -501,9 +493,6 @@ text-shadow:
 
 }
 
-/* ===================== */
-/* SKILLS */
-/* ===================== */
 
 .skills-section{
 
@@ -868,19 +857,15 @@ transform:translateY(10px);
 
 }
 
-/* CERTIFICADOS */
 
 .certificates-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,320px));
 
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(280px,1fr));
-
-gap:25px;
-
-margin-top:40px;
-
+    justify-content:center;
+    gap:25px;
+    margin-top:40px;
 }
 
 .certificate-card{
@@ -1249,4 +1234,27 @@ margin-top:20px;
     color: #9d9d9d;
 
     font-size: .9rem;
+}
+
+@media (max-width: 768px){
+
+    .certificates-grid{
+        grid-template-columns: 1fr;
+        justify-content:center;
+    }
+
+    .certificate-card{
+        width:100%;
+        max-width:400px;
+        margin:0 auto;
+    }
+
+    .tech-grid{
+        justify-content:center;
+    }
+
+    .tech-grid span{
+        text-align:center;
+    }
+
 }
